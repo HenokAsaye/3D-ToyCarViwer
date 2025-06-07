@@ -1,5 +1,5 @@
-import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js';
-import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/controls/OrbitControls.js';
+import * as THREE from './three.module.js';
+import { OrbitControls } from './OrbitControls.js'
 
 export let camera, scene, renderer, controls;
 
@@ -14,7 +14,7 @@ export function initScene() {
   renderer.setSize(window.innerWidth, window.innerHeight);
 
 
-  controls = new THREE.OrbitControls(camera, renderer.domElement);
+  controls = new OrbitControls(camera, renderer.domElement);
   controls.enableDamping = true;
 
   window.addEventListener('resize', () => {
