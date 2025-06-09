@@ -1,15 +1,28 @@
 <!DOCTYPE html>
+<!-- Standard HTML5 document type -->
 <html lang="en">
+<!-- Root HTML element, language set to English -->
 <head>
+  <!-- Head section containing metadata and links -->
   <meta charset="UTF-8" />
+  <!-- Character encoding set to UTF-8 for broad character support -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- Viewport settings for responsive design on different devices -->
   <title>3D Toy Car Viewer</title>
+  <!-- Title of the HTML document, shown in the browser tab -->
   <link rel="stylesheet" href="style/style.css" />
+  <!-- Link to the external CSS file for styling -->
 </head>
 <body>
+  <!-- Body section containing the visible content of the page -->
+
+  <!-- Container for displaying information or UI elements -->
   <div id="infoPanel"></div>
+
+  <!-- Canvas element where the 3D scene will be rendered by WebGL/Three.js -->
   <canvas id="webglCanvas"></canvas>
 
+  <!-- Main JavaScript file, loaded as a module. This is the entry point for the 3D application. -->
   <script type="module" src="scripts/main.js"></script>
 </body>
 </html>
